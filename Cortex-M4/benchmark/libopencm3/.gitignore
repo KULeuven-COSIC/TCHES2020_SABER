@@ -6,7 +6,7 @@
 *.srec
 *.a
 *.elf
-lib/*.ld
+##lib/*.ld
 *.stylecheck
 *.swp
 \#*
@@ -21,10 +21,10 @@ latex/
 *.tag
 .DS_Store
 # These are generated
-include/libopencm3/**/nvic.h
-include/libopencm3/**/**/nvic.h
-lib/**/vector_nvic.c
-lib/**/**/vector_nvic.c
+##include/libopencm3/**/nvic.h
+##include/libopencm3/**/**/nvic.h
+##lib/**/vector_nvic.c
+##lib/**/**/vector_nvic.c
 doxy.sourcelist
 include/libopencmsis/efm32/
 include/libopencmsis/lm3s/
