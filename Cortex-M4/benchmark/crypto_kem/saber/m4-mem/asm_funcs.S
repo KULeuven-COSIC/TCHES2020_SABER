@@ -86,14 +86,14 @@ toom_cook_4way_mem_asm_loop2:
 //r0=&a1[i+64] r1=&b1[i+64] r2=&w_m[896+320+64+i] r3-r10 r12
 	mov 	r9, r11
 	mov 	r11, r0
-	mov 	r12, r1
+	mov 	r4, r1
 	sub 	r0, r2, #2560
 	mov 	r1, #0
 	mov 	r2, #1792
 	bl 		memset
 	mov 	r10, r0
 	sub 	r0, r11, #128
-	sub 	r1, r12, #128
+	sub 	r1, r4, #128
 	add		r2, r10, #1536
 	mov 	r3, #32
 	bl 		unrolled_kara_mem
@@ -123,7 +123,7 @@ toom_cook_4way_mem_asm_loop2:
 	mov 	r3, #32
 	bl 		unrolled_kara_mem
 	add 	r0, r11, #256
-	add 	r1, r12, #256
+	add 	r1, r4, #256
 	mov 	r2, r10
 	mov 	r3, #32
 	bl 		unrolled_kara_mem
